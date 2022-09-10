@@ -31,10 +31,13 @@ const IMAGE_PATH = "images/Characters/";
 	status - Whether or not the character is dead
 */
 function createFilename(id, status) {
+	//Capitalize the first letter of the ID
+	const capID = id[0].toUpperCase() + id.substring(1);
+	
 	if(status === Status.ALIVE)
-		return IMAGE_PATH + "Icon_" + id + ".png";
+		return IMAGE_PATH + "Icon_" + capID + ".png";
 	else
-		return IMAGE_PATH + "Icon_" + id + "_Dead.png";
+		return IMAGE_PATH + "Icon_" + capID + "_Dead.png";
 }
 
 /**
