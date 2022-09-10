@@ -1,0 +1,170 @@
+@font-face {
+  font-family: massEffect;
+  src: url("fonts/me123.ttf");
+}
+
+.header {
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+.header img {
+	display: center;
+	max-width: 20vw;
+	max-height: 20vh;
+	width: auto;
+	height: auto;
+	padding: 1.5vh;
+	color: white;
+}
+
+img {
+	color: white;
+}
+
+.loyaltyButtons {
+	position: fixed;
+	right: 1vw;
+	top: 1vh;
+	cursor: pointer;
+}
+
+.loyaltyButton {
+	background-image: url("images/button.png");
+	background-size: 100% 100%;
+	text-align: center;
+	width: 10vw;
+	height: 2vh;
+}
+
+.loyaltyButton:hover {
+	background-image: url("images/button_select.png");
+}
+
+.loyaltyText {
+	text-align: center;
+	color: white;
+	font-family: massEffect;
+	font-size: 0.6vw;
+}
+
+.column {
+  float: left;
+  text-align: center;
+  width: 25%;
+  height: 65vh;
+}
+
+body {
+	background-image: url("images/bg.png");
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.nodeTable {
+	max-width: 30vw;
+	max-height: 30vh;
+	width: auto;
+	height: auto;
+	border-spacing: 1vw;
+	display: inline;
+}
+
+.fullColumn {
+  text-align: center;
+  width: 100vw;
+}
+
+.charNode {
+	width: fit-content;
+	height: fit-content;
+}
+
+.charNode img{
+	background-image: url("images/node_bg.png");
+	background-size: 100% 100%;
+	max-width: 10vw;
+	max-height: 10vh;
+	width: auto;
+	height: auto;
+}
+
+.dragContainer {
+	cursor: pointer;
+}
+
+.tableHeader, #casualtyHeader {
+	text-align: center;
+	color: white;
+	font-family: massEffect;
+	font-size: 1vw;
+}
+
+.tableHeader p {
+	background-image: url("images/header.png");
+	background-size: 100% 100%;
+	padding: 1vw;
+	display: inline-block;
+}
+
+#casualtyHeader {
+	background-image: url("images/header.png");
+	background-size: 100% 100%;
+	padding: 0.8vw;
+	display: inline-block;
+}
+
+#casualtyTable {
+	border-spacing: 1vw;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+}
+
+.checkboxContainer {
+	width: fit-content;
+	height: fit-content;
+	color: white;
+	font-family: massEffect;
+	font-size: 0.6vw;
+	position: absolute;
+	display: block;
+	margin-left: 1vw;
+	white-space: nowrap;
+}
+
+.checkbox {
+	display:none;
+}
+
+.checkbox + label {
+	background-image: url("images/chkbox_uncheck.png");
+	background-size: 100% 100%;
+	width: 1em;
+	height: 1em;
+	margin-left: 0.5em;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.checkbox:checked + label {
+	background-image: url("images/chkbox_check.png");
+	background-size: 100% 100%;
+}
+
+.infoContainer {
+	text-align: center;
+	margin-bottom: 1vh;
+}
+
+.infoDisplay {
+	text-align: center;
+	color: white;
+	font-family: massEffect;
+	font-size: 0.6vw;
+	padding: 5vw;
+}

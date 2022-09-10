@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	
+	<div class="header">
+		<img src="images/logo.png" alt="Mass Effect 3 logo">
+		
+		<!-- Loyalty Buttons -->
+		<span class="loyaltyButtons">
+			<!--<img src="images/reset.png" alt="Reset" onclick="resetAllNodes()">-->
+			<div class="loyaltyButton" id="loyalButton">
+				<p class="loyaltyText">Make all Loyal</p>
+			</div>
+			<div class="loyaltyButton" id="disloyalButton">
+				<p class="loyaltyText">Make all Disloyal</p>
+			</div>
+		</span>
+		<!-- End Loyalty Buttons -->
+	</div>
+
+</head>
+
+<body onload="setup()">
+	<div class="column">
+		<div class = "tableHeader">
+			<p>Defenders</p>
+		</div>
+		<table class="nodeTable" id="defenderTable">
+			<tr class="nodeRow">
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+			</tr>
+			<tr class="nodeRow">
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+			</tr>
+			<tr class="nodeRow">
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+			</tr>
+			<tr class="nodeRow">
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container" draggable="true" ondragstart="drag(event)"><img draggable="false" class="dragContainer"><span draggable="false" class="checkboxContainer">Loyal<input draggable="false" type="checkbox" class="checkbox"/></span></div></td>
+			</tr>
+		</table>
+	</div>
+	<div class="column">
+		<div class = "tableHeader">
+			<p>Crew Escort</p>
+		</div>
+		<table class="nodeTable" id="escortTable">
+			<tr class="nodeRow">
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+			</tr>
+		</table>
+	</div>
+	<div class="column">
+		<div class = "tableHeader">
+			<p>Shepard's Squad</p>
+		</div>
+		<table class="nodeTable" id="shepSquadTable">
+			<tr class="nodeRow">
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+			</tr>
+		</table>
+	</div>
+	<div class="column">
+		<div class = "tableHeader">
+			<p>Dead/Missing</p>
+		</div>
+		<table class="nodeTable" id="missingTable">
+			<tr class="nodeRow">
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+			</tr>
+			<tr class="nodeRow">
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+			</tr>
+			<tr class="nodeRow">
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+			</tr>
+			<tr class="nodeRow">
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" class="charNode"><div class="container"><img draggable="false" class="emptyContainer"></div></td>
+			</tr>
+		</table>
+	</div>
+	<div class="infoContainer">
+		<span class="infoDisplay" id="defenseScore"></span>
+	</div>
+	<div class="infoContainer">
+		<span class="casualtyHeader" id="casualtyHeader">Casualties</span>
+	</div>
+	<div class="fullColumn">
+		<table class="nodeTable" id="casualtyTable"></table>
+	</div>
+	
+	<script src="scripts/alias.js"></script>
+	<script src="scripts/calculate.js"></script>
+	<script src="scripts/drag.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>
