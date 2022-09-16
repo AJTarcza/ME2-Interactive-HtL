@@ -1,6 +1,6 @@
 @font-face {
   font-family: massEffect;
-  src: url("fonts/me123.ttf");
+  src: url("../fonts/me123.ttf");
 }
 
 .header {
@@ -18,19 +18,31 @@
 	color: white;
 }
 
+.github {
+	position: absolute;
+	left: 2vw;
+	top: 2vh;
+	cursor: pointer;
+	font-size: 3vw;
+}
+
+.fa-github {
+	color: white;
+}
+
 img {
 	color: white;
 }
 
 .loyaltyButtons {
 	position: fixed;
-	right: 1vw;
+	right: 2vw;
 	top: 1vh;
 	cursor: pointer;
 }
 
 .loyaltyButton {
-	background-image: url("images/button.png");
+	background-image: url("../images/button.png");
 	background-size: 100% 100%;
 	text-align: center;
 	width: 10vw;
@@ -38,7 +50,7 @@ img {
 }
 
 .loyaltyButton:hover {
-	background-image: url("images/button_select.png");
+	background-image: url("../images/button_select.png");
 }
 
 .loyaltyText {
@@ -56,7 +68,7 @@ img {
 }
 
 body {
-	background-image: url("images/bg.png");
+	background-image: url("../images/bg.png");
 	background-size: cover;
 	margin: 0;
 	padding: 0;
@@ -83,7 +95,7 @@ body {
 }
 
 .charNode img{
-	background-image: url("images/node_bg.png");
+	background-image: url("../images/node_bg.png");
 	background-size: 100% 100%;
 	max-width: 10vw;
 	max-height: 10vh;
@@ -103,14 +115,14 @@ body {
 }
 
 .tableHeader p {
-	background-image: url("images/header.png");
+	background-image: url("../images/header.png");
 	background-size: 100% 100%;
 	padding: 1vw;
 	display: inline-block;
 }
 
 #casualtyHeader {
-	background-image: url("images/header.png");
+	background-image: url("../images/header.png");
 	background-size: 100% 100%;
 	padding: 0.8vw;
 	display: inline-block;
@@ -142,7 +154,7 @@ body {
 }
 
 .checkbox + label {
-	background-image: url("images/chkbox_uncheck.png");
+	background-image: url("../images/chkbox_uncheck.png");
 	background-size: 100% 100%;
 	width: 1em;
 	height: 1em;
@@ -152,7 +164,7 @@ body {
 }
 
 .checkbox:checked + label {
-	background-image: url("images/chkbox_check.png");
+	background-image: url("../images/chkbox_check.png");
 	background-size: 100% 100%;
 }
 
